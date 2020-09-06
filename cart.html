@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/d893e672e0.js"></script>
+    <script type="text/javascript" src="js/headerSlider.js"></script>
+    <script type="text/javascript" src="js/drop-down menu.js"></script>
+    <script type="text/javascript" src="js/sidebarSlider.js"></script>
+    <script src="js/cart.js"></script>
+</head>
+<body>
+<div class="wrapper">
+
+    <header class="header ">
+        <section class="settings  ">
+            <div class ="flex-header1 wrap">
+                <div id="drop-down-language" class="drop-down-menu ">
+                    <li>Language: <span>English &#9660</span>
+                        <ul>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Русский</a></li>
+                            <li><a href="#">French</a></li>
+                        </ul>
+                    </li>
+                </div>
+                <div id="drop-down-currency" class="drop-down-menu ">
+                    <li>Currency:<span>USD &#9660</span>
+                        <ul>
+                            <li><a href="#">USD</a></li>
+                            <li><a href="#">RUB</a></li>
+                            <li><a href="#">EUR</a></li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="account-menu ">
+                    <ul>
+                        <li><a href ="#">Account</a></li>
+                        <li><a href ="#">Wishlist</a></li>
+                        <li><a href ="#">Log In</a></li>
+                        <li><a href ="#">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="flex-header2 wrap">
+                <a href ="index.html"><h1>LEO SHOP</h1></a>
+                <ul>
+                    <li><a href ="index.html">HOME</a></li>
+                    <li><a href ="#">WOMEN</a></li>
+                    <li><a href ="#">MEN</a></li>
+                    <li><a href ="#">OTHER</a></li>
+                    <li><a href ="#">PURCHASE</a></li>
+                </ul>
+                <div class ="search">
+                    <input type="text" placeholder ="Search..."/>
+                    <a href = "#"><i class="fas fa-search"></i></a>
+                </div>
+                <a href ="#"><i class="fas fa-tags"></i></a><a href ="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href ="#"><p>CART</p><div class="count-goods"></div></a>
+            </div>
+        </section>
+        <section class="slider">
+            <ul id="slide">
+                <li><img src="images/slide-1.png" alt="" />
+                    <h1>ALUMINUM CLUB
+                        <p>Experience Ray-Ban</p>
+                    </h1>
+                </li>
+                <li><img src="images/slide-3.png" alt="" />
+                    <h1>LOREM IPSUM
+                        <p>EVestibulum nisi nunc</p>
+                    </h1></li>
+                <ul id="buttons">
+                    <li id="prev" onmousedown="return false"><i class="fas fa-chevron-left"></i></i></li>
+                    <li id="next" onmousedown="return false"><i class="fas fa-chevron-right"></i></li>
+                </ul>
+
+            </ul>
+        </section>
+    </header><!-- .header-->
+
+    <div class="middle">
+        <div class="container">
+            <main class="content wrap">
+
+                <h1>CART</h1>
+
+                <div class="basket">
+                        <!--<button>X</button>
+                        <span>name</span>
+                        <button>-</button>
+                        <input type="text">
+                        <button>+</button>
+                        <span>total</span>
+                        <hr>
+                        <span>Total:</span>
+                        <span>---</span>-->
+                </div>
+
+                <div class="total"></div>
+            </main><!-- .content -->
+        </div><!-- .container-->
+
+        <aside class="right-sidebar">
+            <section class="first">
+                <h1>FEATURED GLASS</h1>
+                <div class="slider-sidebar">
+                    <ul id="slider">
+                        <li><img src="images/feature-glass1.png" alt="" /></li>
+                        <li><img src="images/feature-glass2.png" alt="" /></li>
+                        <li><img src="images/feature-glass3.png" alt="" /></li>
+                    </ul>
+                    <hr>
+                    <ul id="dots">
+
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+
+                    </ul>
+                </div>
+            </section>
+            <section class="second">
+                <h1>NEWSLETTERS	SIGNUP</h1>
+                <p>Lorem ipsum dolor sit amen, dolor imun ra adlip </p>
+                <div class="input">
+                    <input type="text" class="search">
+                </div>
+
+                <a href ="#">Subscribe</a>
+
+            </section>
+        </aside><!-- .right-sidebar -->
+
+    </div><!-- .middle-->
+
+</div><!-- .wrapper -->
+
+<footer class="footer">
+    <section class="shipping">
+        <div class="wrap">
+            <i class="fas fa-truck"></i>
+            <p>FREE SHIPPING ON ORDERS OVER $100</p>
+        </div>
+        <div class="wrap">
+            <i class="fas fa-phone-alt"></i>
+            <p>CALL US! TOLL FREE - 409-8888-0099</p>
+        </div>
+    </section>
+    <section class="social">
+        <div class="wrap">
+            <div class="facebook">
+                <h1>FACEBOOK</h1>
+                <p>20000 Members</p>
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v4.0"></script>
+                <div class="fb-post" data-href="https://www.facebook.com/20531316728/posts/10154009990506729/" data-width="350" data-show-text="true"><blockquote cite="https://developers.facebook.com/20531316728/posts/10154009990506729/" class="fb-xfbml-parse-ignore">Опубликовано <a href="https://www.facebook.com/facebook/">Facebook</a>&nbsp;<a href="https://developers.facebook.com/20531316728/posts/10154009990506729/">Четверг, 27 августа 2015 г.</a></blockquote></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v4.0"></script>
+                <div class = "fb-like" data-href = "https://developers.facebook.com/docs/plugins/" data-width = "" data-layout = "button" data-action = "like" data-size = "large" data-show-face = "true" data-share = "true" > </div>
+            </div>
+            <div class="twitter">
+                <h1>FROM TWITTER</h1>
+                <blockquote class="twitter-tweet" data-width="250"><p lang="en" dir="ltr">Did you know you can share a Tweet privately via Direct Message? Learn more! <a href="https://t.co/X0b8ip53tX">https://t.co/X0b8ip53tX</a></p>&mdash; Twitter Support (@TwitterSupport) <a href="https://twitter.com/TwitterSupport/status/806207281410883584?ref_src=twsrc%5Etfw">December 6, 2016</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="info">
+                <h1>INFORMATION</h1>
+                <ul>
+                    <li><a href ="#">>  Sed ultrices purus non.</a></li>
+                    <li><a href ="#">>  Sodales sodales.</a></li>
+                    <li><a href ="#">>  Curabitur pretium dui vitae.</a></li>
+                    <li><a href ="#">>  Donec gravida mi in nisl.</a></li>
+                    <li><a href ="#">>  faucibus leo condimentum.</a></li>
+                    <li><a href ="#">>  Donec et lorem suscipit.</a></li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <h1>CONTACT US</h1>
+                <p>Leo Store
+                    Leopards media
+                    KVM Rpad, 4590GH
+                    +1 489-8888-0099
+                    mail@email.com</p>
+                <a href ="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href ="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href ="#"><i class="fas fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="copyright">
+        <div class="wrap">
+            <p>© Copyright 2013 Css Author, All Rights Reserved.</p>
+            <ul>
+                <li><a href ="#">About Us</a></li>
+                <li><a href ="#">Delivery & Returns</a></li>
+                <li><a href ="#">Terms & Conditions</a></li>
+                <li><a href ="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </section>
+</footer><!-- .footer -->
+</body>
+</html>
