@@ -65,7 +65,7 @@ function saveCart(){
 function showMiniCart(){
     //let out='';
     let count = 0;
-    for(let in cart){
+    for(let key in cart){
       //  out+=key+'---------'+cart[key];
         count+=cart[key];
     }
